@@ -27,7 +27,7 @@ export default function Navbar() {
         "sticky top-0 z-50 flex p-4 sm:py-6 sm:px-24 w-full items-center justify-between",
         openMobileMenu || !isHome
           ? "text-brand-color bg-white"
-          : "text-white  bg-transparent"
+          : "text-white bg-transparent"
       )}
     >
       <Link href="/" className={clsx(openMobileMenu && "invisible")}>
@@ -57,7 +57,7 @@ export default function Navbar() {
       {openMobileMenu && (
         <div
           className={clsx(
-            "absolute sm:hidden top-full left-0 w-full h-screen shadow-md bg-white text-brand-color transform transition-all duration-300 origin-top",
+            "absolute sm:hidden top-full left-0 w-full h-screen shadow-md text-brand-color bg-white transform transition-all duration-300 origin-top",
             openMobileMenu
               ? "opacity-100 scale-y-100 pointer-events-auto"
               : "opacity-0 scale-y-0 pointer-events-none"
