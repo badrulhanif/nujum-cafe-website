@@ -24,3 +24,11 @@ export type FooterItem = {
   rel?: string;
   status?: ItemStatus;
 };
+
+export type FacilitiesItem = {
+  id: string;
+  src: string;
+  alt: string;
+  name: string;
+  description: string;
+};

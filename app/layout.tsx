@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import { Phone, Instagram, Tiktok } from "iconoir-react";
 import "@/app/globals.css";
 
+import BrandLogo from "@/components/icons/BrandLogo";
 import Navbar from "@/components/ui/Navbar";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,6 +22,67 @@ export default function RootLayout({
       <body className="relative antialiased overflow-x-hidden overflow-y-auto bg-custom">
         <Navbar />
         <main className="w-full">{children}</main>
+        <footer className="flex flex-col items-start justify-start px-4 py-8 sm:px-64 sm:py-24 gap-8 sm:gap-16 text-[#FFF5E8] bg-footer">
+          <div className="flex flex-col sm:flex-row gap-8 w-full justify-between">
+            <div className="flex flex-col gap-4 sm:gap-8">
+              <Link href="/">
+                <BrandLogo className="w-16 sm:w-24 h-8 sm:h-12 text-white" />
+              </Link>
+              <p>Nujum Cafe</p>
+              <p>
+                Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
+                75460 Melaka
+              </p>
+              <div className="flex flex-col gap-4">
+                <Link
+                  href="tel:+601116174226"
+                  className="flex items-center gap-2"
+                >
+                  <Phone className="w-4 h-4" strokeWidth={2} />
+                  <span className="hover:underline">+60 11-16174226</span>
+                </Link>
+              </div>
+            </div>
+            <div className="flex flex-col gap-8 sm:justify-between h-fit sm:h-64">
+              <div className="flex flex-col gap-4">
+                <span className="font-semibold">Informasi</span>
+                {siteConfig.footerItems
+                  .filter(
+                    (item) =>
+                      item.category === "informasi" && !item.status?.isHidden
+                  )
+                  .map((item) => (
+                    <Link
+                      key={item.id}
+                      href={item.href}
+                      className="hover:text-amber-500"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+              </div>
+              <div className="flex gap-4">
+                <Instagram className="w-8 h-8" />
+                <Tiktok className="w-8 h-8" />
+              </div>
+            </div>
+          </div>
+          {/* <div className="flex flex-col sm:flex-row pt-4 gap-4 w-full border-t border-zinc-200">
+            {siteConfig.footerItems
+              .filter(
+                (item) => item.category === "legal" && !item.status?.isHidden
+              )
+              .map((item) => (
+                <Link
+                  key={item.id}
+                  href={item.href}
+                  className="text-zinc-500 hover:text-amber-500"
+                >
+                  {item.name}
+                </Link>
+              ))}
+          </div> */}
+        </footer>
       </body>
     </html>
   );

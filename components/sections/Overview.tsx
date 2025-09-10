@@ -12,12 +12,12 @@ export default function OverviewSection() {
           Teeerrrrpaling Legend
         </h2>
         <h2
-          className={`absolute left-1/2 -translate-x-1/2 bottom-0 sm:-left-8 sm:-bottom-4 sm:translate-x-0 z-0 text-4xl sm:text-6xl italic ${merriweather.className} text-secondary opacity-30`}
+          className={`absolute left-1/2 -translate-x-1/2 -bottom-2 sm:-left-16 sm:-bottom-4 sm:translate-x-0 z-0 text-4xl sm:text-6xl w-full italic ${merriweather.className} text-secondary opacity-30`}
         >
           Teeerrrrpaling Legend
         </h2>
       </div>
-      <div className="flex flex-col gap-4 items-center justify-center">
+      <div className="flex flex-col gap-4 items-center justify-center text-brand">
         <p className="text-lg sm:text-2xl text-center font-semibold">
           “Nujum Signature Fried Rice”
         </p>

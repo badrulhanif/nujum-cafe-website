@@ -79,6 +79,8 @@
   --brand-color: #1d1000;
   --secondary-color: #fdba74;
   --background-color: #fff5e8;
+  --background-secondary: #fdba74;
+  --background-footer: #1d1000;
 }
 
 .dark {
@@ -142,4 +144,12 @@
 
 .hover\:bg-custom:hover {
   background-color: var(--background-color);
+}
+
+.bg-secondary {
+  background-color: var(--background-secondary);
+}
+
+.bg-footer {
+  background-color: var(--background-footer);
 }
