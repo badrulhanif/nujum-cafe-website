@@ -77,6 +77,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --brand-color: #1d1000;
+  --secondary-color: #fdba74;
   --background-color: #fff5e8;
 }
 
@@ -125,6 +126,10 @@
 
 .text-brand {
   color: var(--brand-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
 }
 
 .hover\:text-brand:hover {
