@@ -26,7 +26,7 @@ export default function Navbar() {
       className={clsx(
         "sticky top-0 z-50 flex p-4 sm:py-6 sm:px-24 w-full items-center justify-between",
         openMobileMenu || !isHome
-          ? "text-brand-color bg-white"
+          ? "text-brand bg-custom"
           : "text-white bg-transparent"
       )}
     >
@@ -38,7 +38,7 @@ export default function Navbar() {
           <Link
             key={item.id}
             href={item.href}
-            className="hover:text-brand-color"
+            className="p-4 hover:text-brand hover:bg-custom"
           >
             {item.name}
           </Link>
@@ -57,7 +57,7 @@ export default function Navbar() {
       {openMobileMenu && (
         <div
           className={clsx(
-            "absolute sm:hidden top-full left-0 w-full h-screen shadow-md text-brand-color bg-white transform transition-all duration-300 origin-top",
+            "absolute sm:hidden top-full left-0 w-full h-screen shadow-md text-brand bg-custom transform transition-all duration-300 origin-top",
             openMobileMenu
               ? "opacity-100 scale-y-100 pointer-events-auto"
               : "opacity-0 scale-y-0 pointer-events-none"
@@ -69,7 +69,7 @@ export default function Navbar() {
                 key={item.id}
                 href={item.href}
                 onClick={() => setOpenMobileMenu(false)}
-                className="hover:text-brand-color"
+                className="text-xl sm:text-2xl"
               >
                 {item.name}
               </Link>

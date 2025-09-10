@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="relative antialiased overflow-x-hidden overflow-y-auto">
+      <body className="relative antialiased overflow-x-hidden overflow-y-auto bg-custom">
         <Navbar />
         <main className="w-full">{children}</main>
       </body>

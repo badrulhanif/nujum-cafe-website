@@ -76,6 +76,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --brand-color: #1d1000;
+  --background-color: #fff5e8;
 }
 
 .dark {
@@ -121,10 +123,18 @@
   }
 }
 
-.brand-color {
-  color: #1d1000;
+.text-brand {
+  color: var(--brand-color);
 }
 
-.background-color {
-  color: #fff5e8;
+.hover\:text-brand:hover {
+  color: var(--brand-color);
+}
+
+.bg-custom {
+  background-color: var(--background-color);
+}
+
+.hover\:bg-custom:hover {
+  background-color: var(--background-color);
 }
