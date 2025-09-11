@@ -48,8 +48,10 @@ export default function Navbar() {
             key={item.id}
             href={item.href}
             className={clsx(
-              "p-4 hover:text-brand hover:bg-custom",
-              scroll ? "hover:text-white hover:bg-footer" : "" //fixed later
+              "p-4",
+              scroll
+                ? "hover:text-white hover:bg-footer"
+                : "hover:text-brand hover:bg-custom"
             )}
           >
             {item.name}

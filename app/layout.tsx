@@ -67,14 +67,14 @@ export default function RootLayout({
                   rel="noopener noreferrer"
                   href="https://www.instagram.com/nujum.cafe/"
                 >
-                  <Instagram className="w-8 h-8" />
+                  <Instagram className="w-8 h-8 hover:text-amber-500" />
                 </Link>
                 <Link
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://www.tiktok.com/@nujum.cafe"
                 >
-                  <Tiktok className="w-8 h-8" />
+                  <Tiktok className="w-8 h-8 hover:text-amber-500" />
                 </Link>
               </div>
             </div>
