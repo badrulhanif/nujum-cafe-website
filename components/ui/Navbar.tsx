@@ -34,8 +34,10 @@ export default function Navbar() {
     <nav
       className={clsx(
         "sticky top-0 z-50 flex p-4 sm:py-6 sm:px-24 w-full items-center justify-between",
-        scroll || openMobileMenu || !isHome
+        openMobileMenu
           ? "text-brand bg-custom"
+          : scroll || !isHome
+          ? "text-white bg-footer-90 backdrop-blur-md"
           : "text-white bg-transparent"
       )}
     >
@@ -47,12 +49,7 @@ export default function Navbar() {
           <Link
             key={item.id}
             href={item.href}
-            className={clsx(
-              "p-4",
-              scroll
-                ? "hover:text-white hover:bg-footer"
-                : "hover:text-brand hover:bg-custom"
-            )}
+            className="p-4 hover:text-brand hover:bg-custom"
           >
             {item.name}
           </Link>

@@ -6,7 +6,7 @@ export default function HighlightSection() {
   return (
     <section className="flex flex-col mt-8 sm:mt-16 px-4 py-12 sm:px-64 sm:py-24 gap-8 sm:gap-16 bg-gradient-to-b from-[#1D1000] to-[#472701]">
       <h2
-        className={`text-2xl sm:text-4xl italic ${merriweather.className} text-white`}
+        className={`text-4xl sm:text-6xl italic ${merriweather.className} text-white`}
       >
         Tiada Kopi Tanpa Kamu
       </h2>
