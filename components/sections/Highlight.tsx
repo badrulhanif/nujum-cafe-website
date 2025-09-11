@@ -35,7 +35,7 @@ export default function HighlightSection() {
             />
           </div>
         </div>
-        <div className=" w-full sm:w-1/2">
+        <div className="w-full sm:w-1/2">
           <div className="w-full h-full rounded-2xl sm:rounded-4xl overflow-hidden">
             <Image
               src="/Images/overview-banner.png"

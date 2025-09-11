@@ -27,7 +27,7 @@ export default function FacilitiesSection() {
               />
             </div>
             <div
-              className="flex flex-col gap-4 p-4 rounded-2xl"
+              className="flex flex-col gap-4 p-4 rounded-2xl text-brand"
               style={{ backgroundColor: "rgb(253 186 116 / 0.3)" }}
             >
               <h2 className="text-lg sm:text-xl font-semibold">{item.name}</h2>

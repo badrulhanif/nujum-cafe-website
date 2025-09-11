@@ -153,3 +153,7 @@
 .bg-footer {
   background-color: var(--background-footer);
 }
+
+.border-brand {
+  border-color: #1d1000;
+}
