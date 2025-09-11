@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { facilities } from "@/data/facilities";
 import { merriweather } from "@/config/font";
@@ -15,8 +18,15 @@ export default function FacilitiesSection() {
         Port Santai + Wifi Free + Instagrammable
       </p>
       <div className="flex flex-col sm:flex-row gap-8">
-        {facilities.map((item) => (
-          <div key={item.id} className="flex flex-col gap-4">
+        {facilities.map((item, index) => (
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.5 }}
+            viewport={{ once: true, amount: 0 }}
+            className="flex flex-col gap-4"
+          >
             <div className="w-full max-h-96 aspect-square rounded-2xl sm:rounded-4xl overflow-hidden">
               <Image
                 src={item.src}
@@ -33,7 +43,7 @@ export default function FacilitiesSection() {
               <h2 className="text-lg sm:text-xl font-semibold">{item.name}</h2>
               <p className="text-md sm:text-lg">{item.description}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

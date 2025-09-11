@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { merriweather } from "@/config/font";
 import { menus } from "@/data/menu";
@@ -12,8 +15,15 @@ export default function MenuPage() {
         Menu
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {menus.map((item) => (
-          <div key={item.id} className="flex flex-col">
+        {menus.map((item, index) => (
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.5 }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="flex flex-col"
+          >
             <div className="w-full max-h-72 aspect-square rounded-2xl sm:rounded-4xl overflow-hidden">
               <Image
                 src={item.src}
@@ -31,7 +41,7 @@ export default function MenuPage() {
                 {item.price.current}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

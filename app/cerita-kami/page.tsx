@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { Shop, Phone, Instagram, Tiktok } from "iconoir-react";
 
 import { merriweather } from "@/config/font";
@@ -12,7 +15,13 @@ export default function CeritaKamiPage() {
       >
         Cerita Kami
       </h2>
-      <div className="w-full overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="w-full overflow-hidden"
+      >
         <Image
           src="/Images/cerita-kami-hero-banner.png"
           alt="Overview Banner"
@@ -20,9 +29,15 @@ export default function CeritaKamiPage() {
           height={1600}
           className="object-cover"
         />
-      </div>
+      </motion.div>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 sm:py-8">
-        <div className="flex flex-col gap-8 sm:gap-16 w-full sm:w-1/2 text-md sm:text-lg">
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="flex flex-col gap-8 sm:gap-16 w-full sm:w-1/2 text-md sm:text-lg"
+        >
           <p>
             Bermula dari sebuah impian sederhana, saya, Pak Nujum memulakan
             perjalanan ini dengan satu tujuan iaitu mencipta ruang di Melaka di
@@ -42,8 +57,14 @@ export default function CeritaKamiPage() {
             adalah cerminan dari dedikasi kami untuk memberikan yang terbaik
             kepada anda.
           </p>
-        </div>
-        <div className="w-full sm:w-1/2 max-h-128 aspect-square overflow-hidden">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="w-full sm:w-1/2 max-h-128 aspect-square overflow-hidden"
+        >
           <Image
             src="/Images/cerita-kami-banner-1.png"
             alt="Overview Banner"
@@ -51,9 +72,15 @@ export default function CeritaKamiPage() {
             height={1600}
             className="object-cover w-full h-full"
           />
-        </div>
+        </motion.div>
       </div>
-      <div className="flex flex-col gap-8 sm:gap-16 py-8">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="flex flex-col gap-8 sm:gap-16 py-8"
+      >
         <h2
           className={`relative text-4xl sm:text-6xl text-center ${merriweather.className} text-brand`}
         >
@@ -72,7 +99,7 @@ export default function CeritaKamiPage() {
             dalam setiap menu.
           </p>
         </div>
-      </div>
+      </motion.div>
       <div className="flex flex-col gap-8 sm:gap-16 py-8">
         <div className="flex gap-8 items-center">
           <h2
@@ -93,7 +120,11 @@ export default function CeritaKamiPage() {
               className="object-cover w-full h-full"
             />
           </div>
-          <div
+          <motion.div
+            initial={{ opacity: 0, rotateY: 90 }}
+            whileInView={{ opacity: 1, rotateY: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
             className="flex flex-col gap-8 p-8 sm:p-12 w-full sm:w-1/2 text-md sm:text-lg rounded-2xl sm:rounded-4xl text-brand"
             style={{ backgroundColor: "rgb(253 186 116 / 0.3)" }}
           >
@@ -139,7 +170,7 @@ export default function CeritaKamiPage() {
                 </Link>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
