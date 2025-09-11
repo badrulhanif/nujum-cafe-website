@@ -31,7 +31,7 @@ export default function FacilitiesSection() {
               style={{ backgroundColor: "rgb(253 186 116 / 0.3)" }}
             >
               <h2 className="text-lg sm:text-xl font-semibold">{item.name}</h2>
-              <p>{item.description}</p>
+              <p className="text-md sm:text-lg">{item.description}</p>
             </div>
           </div>
         ))}

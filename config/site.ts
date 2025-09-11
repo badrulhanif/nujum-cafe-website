@@ -38,5 +38,19 @@ export const siteConfig = {
       href: "/menu",
       status: { ...defaultStatus },
     },
+    {
+      id: "terma-perkhidmatan",
+      category: "sah",
+      name: "Terma Perkhidmatan",
+      href: "/terma-perkhidmatan",
+      status: { ...defaultStatus },
+    },
+    {
+      id: "privasi",
+      category: "sah",
+      name: "Privasi",
+      href: "/privasi",
+      status: { ...defaultStatus },
+    },
   ],
 };

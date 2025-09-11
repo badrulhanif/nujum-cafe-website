@@ -62,26 +62,43 @@ export default function RootLayout({
                   ))}
               </div>
               <div className="flex gap-4">
-                <Instagram className="w-8 h-8" />
-                <Tiktok className="w-8 h-8" />
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/nujum.cafe/"
+                >
+                  <Instagram className="w-8 h-8" />
+                </Link>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.tiktok.com/@nujum.cafe"
+                >
+                  <Tiktok className="w-8 h-8" />
+                </Link>
               </div>
             </div>
           </div>
-          {/* <div className="flex flex-col sm:flex-row pt-4 gap-4 w-full border-t border-zinc-200">
-            {siteConfig.footerItems
-              .filter(
-                (item) => item.category === "legal" && !item.status?.isHidden
-              )
-              .map((item) => (
-                <Link
-                  key={item.id}
-                  href={item.href}
-                  className="text-zinc-500 hover:text-amber-500"
-                >
-                  {item.name}
-                </Link>
-              ))}
-          </div> */}
+          <div className="flex flex-col sm:flex-row pt-4 gap-4 w-full justify-between">
+            <div className="flex gap-8">
+              {siteConfig.footerItems
+                .filter(
+                  (item) => item.category === "sah" && !item.status?.isHidden
+                )
+                .map((item) => (
+                  <Link
+                    key={item.id}
+                    href={item.href}
+                    className="text-white/30 hover:text-amber-500"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+            </div>
+            <span className="text-white/30">
+              © 2025 Nujum Cafe. All rights reserved.
+            </span>
+          </div>
         </footer>
       </body>
     </html>

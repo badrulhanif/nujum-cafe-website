@@ -11,10 +11,19 @@ import { siteConfig } from "@/config/site";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [scroll, setScroll] = useState(false);
   const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
   const navItems = siteConfig.navItems.filter((item) => !item.status?.isHidden);
   const isHome = pathname === "/";
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScroll(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   //lock scroll when mobile menu is open
   useEffect(() => {
@@ -25,7 +34,7 @@ export default function Navbar() {
     <nav
       className={clsx(
         "sticky top-0 z-50 flex p-4 sm:py-6 sm:px-24 w-full items-center justify-between",
-        openMobileMenu || !isHome
+        scroll || openMobileMenu || !isHome
           ? "text-brand bg-custom"
           : "text-white bg-transparent"
       )}
@@ -38,7 +47,10 @@ export default function Navbar() {
           <Link
             key={item.id}
             href={item.href}
-            className="p-4 hover:text-brand hover:bg-custom"
+            className={clsx(
+              "p-4 hover:text-brand hover:bg-custom",
+              scroll ? "hover:text-white hover:bg-footer" : "" //fixed later
+            )}
           >
             {item.name}
           </Link>
