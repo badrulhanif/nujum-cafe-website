@@ -16,8 +16,8 @@ export default function FacilitiesSection() {
       </p>
       <div className="flex flex-col sm:flex-row gap-8">
         {facilities.map((item) => (
-          <div key={item.id} className="flex flex-col gap-8">
-            <div className="w-full h-full aspect-square rounded-2xl sm:rounded-4xl overflow-hidden">
+          <div key={item.id} className="flex flex-col gap-4">
+            <div className="w-full max-h-96 aspect-square rounded-2xl sm:rounded-4xl overflow-hidden">
               <Image
                 src={item.src}
                 alt={item.alt}

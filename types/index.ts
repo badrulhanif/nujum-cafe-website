@@ -32,3 +32,18 @@ export type FacilitiesItem = {
   name: string;
   description: string;
 };
+
+export type PriceItem = {
+  currency: string;
+  original: number;
+  current: number;
+};
+
+export type MenuItem = {
+  id: string;
+  src: string;
+  alt: string;
+  name: string;
+  description: string;
+  price: PriceItem;
+};

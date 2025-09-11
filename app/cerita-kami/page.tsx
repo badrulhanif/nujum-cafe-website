@@ -8,7 +8,7 @@ export default function CeritaKamiPage() {
   return (
     <section className="flex flex-col p-4 sm:px-64 sm:py-24 gap-8 sm:gap-16">
       <h2
-        className={`text-4xl sm:text-6xl italic ${merriweather.className} text-brand`}
+        className={`text-4xl sm:text-6xl ${merriweather.className} text-brand`}
       >
         Cerita Kami
       </h2>
