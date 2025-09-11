@@ -18,7 +18,7 @@ export default function HighlightSection() {
         <div className="flex flex-col gap-8 w-full sm:w-1/2">
           <div className="w-full rounded-2xl sm:rounded-4xl overflow-hidden">
             <Image
-              src="/Images/overview-banner.png"
+              src="/Images/highlight-banner-1.png"
               alt="Overview Banner"
               width={1600}
               height={1200}
@@ -27,7 +27,7 @@ export default function HighlightSection() {
           </div>
           <div className="w-full rounded-2xl sm:rounded-4xl overflow-hidden">
             <Image
-              src="/Images/overview-banner.png"
+              src="/Images/highlight-banner-2.png"
               alt="Overview Banner"
               width={1600}
               height={1200}
@@ -38,7 +38,7 @@ export default function HighlightSection() {
         <div className="w-full sm:w-1/2">
           <div className="w-full h-full rounded-2xl sm:rounded-4xl overflow-hidden">
             <Image
-              src="/Images/overview-banner.png"
+              src="/Images/highlight-banner-3.png"
               alt="Overview Banner"
               width={1600}
               height={1200}

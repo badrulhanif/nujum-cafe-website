@@ -14,7 +14,7 @@ export default function CeritaKamiPage() {
       </h2>
       <div className="w-full overflow-hidden">
         <Image
-          src="/Images/overview-banner.png"
+          src="/Images/cerita-kami-hero-banner.png"
           alt="Overview Banner"
           width={1600}
           height={1600}
@@ -45,7 +45,7 @@ export default function CeritaKamiPage() {
         </div>
         <div className="w-full sm:w-1/2 max-h-128 aspect-square overflow-hidden">
           <Image
-            src="/Images/overview-banner.png"
+            src="/Images/cerita-kami-banner-1.png"
             alt="Overview Banner"
             width={1600}
             height={1600}
@@ -86,7 +86,7 @@ export default function CeritaKamiPage() {
         <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 sm:py-8">
           <div className="w-full sm:w-1/2 max-h-128 aspect-square overflow-hidden">
             <Image
-              src="/Images/overview-banner.png"
+              src="/Images/cerita-kami-banner-2.png"
               alt="Overview Banner"
               width={1600}
               height={1600}
