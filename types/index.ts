@@ -33,17 +33,41 @@ export type FacilitiesItem = {
   description: string;
 };
 
+export type PriceItemDetails = {
+  original: string;
+  current: string;
+};
+
 export type PriceItem = {
   currency: string;
-  original: number;
-  current: number;
+  standard?: PriceItemDetails;
+  hot?: PriceItemDetails;
+  cold?: PriceItemDetails;
 };
+
+export type MenuCategory =
+  | "Appetizer"
+  | "Main Course"
+  | "Steak"
+  | "Pasta"
+  | "Pizza"
+  | "Kids Meal"
+  | "Coffee"
+  | "Non-Coffee"
+  | "Tea Series"
+  | "Refreshments"
+  | "Canned Drinks"
+  | "Air Buah"
+  | "Others";
 
 export type MenuItem = {
   id: string;
+  category: MenuCategory;
   src: string;
   alt: string;
   name: string;
   description: string;
   price: PriceItem;
+  isDiscount: boolean;
+  isBestSeller: boolean;
 };

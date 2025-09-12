@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { merriweather } from "@/config/font";
-import { menus } from "@/data/menu";
+import { menu } from "@/data/menu";
 
 export default function MenuPage() {
   return (
@@ -15,12 +15,12 @@ export default function MenuPage() {
         Menu
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {menus.map((item, index) => (
+        {menu.map((item, index) => (
           <motion.div
             key={item.id}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.5 }}
             viewport={{ once: true, amount: 0.2 }}
             className="flex flex-col"
           >
@@ -38,7 +38,7 @@ export default function MenuPage() {
               <p className="text-md sm:text-lg">{item.description}</p>
               <p className="text-md sm:text-lg font-semibold">
                 {item.price.currency}
-                {item.price.current}
+                {item.price.standard?.current}
               </p>
             </div>
           </motion.div>

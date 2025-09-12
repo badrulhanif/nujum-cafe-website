@@ -18,7 +18,7 @@ export default function CeritaKamiPage() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
         className="w-full overflow-hidden"
       >
@@ -34,7 +34,7 @@ export default function CeritaKamiPage() {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.2 }}
           className="flex flex-col gap-8 sm:gap-16 w-full sm:w-1/2 text-md sm:text-lg"
         >
@@ -77,7 +77,7 @@ export default function CeritaKamiPage() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
         className="flex flex-col gap-8 sm:gap-16 py-8"
       >

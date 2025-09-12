@@ -23,7 +23,7 @@ export default function FacilitiesSection() {
             key={item.id}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.5 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.5 }}
             viewport={{ once: true, amount: 0 }}
             className="flex flex-col gap-4"
           >
