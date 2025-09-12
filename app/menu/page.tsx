@@ -2,11 +2,25 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 
 import { merriweather } from "@/config/font";
 import { menu } from "@/data/menu";
 
+const categories = [...new Set(menu.map((item) => item.category))];
+
 export default function MenuPage() {
+  const [activeCategory, setActiveCategory] = useState<string>(categories[0]);
+  const categoryRef = useRef<Record<string, HTMLElement | null>>({});
+
+  const handleScrollToCategory = (category: string) => {
+    categoryRef.current[category]?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+    setActiveCategory(category);
+  };
+
   return (
     <section className="flex flex-col p-4 sm:px-64 sm:py-24 gap-8 sm:gap-16">
       <h2
@@ -14,36 +28,87 @@ export default function MenuPage() {
       >
         Menu
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {menu.map((item, index) => (
-          <motion.div
-            key={item.id}
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.5 }}
-            viewport={{ once: true, amount: 0.2 }}
-            className="flex flex-col"
+      <div className="flex gap-4 sticky top-18 sm:top-30 z-50 overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => handleScrollToCategory(category)}
+            className={`p-4 text-left flex-shrink-0 ${
+              activeCategory === category
+                ? "text-brand bg-custom"
+                : "text-brand"
+            }`}
           >
-            <div className="w-full max-h-72 aspect-square rounded-2xl sm:rounded-4xl overflow-hidden">
-              <Image
-                src={item.src}
-                alt={item.alt}
-                width={1200}
-                height={1200}
-                className="object-cover w-full h-full"
-              />
-            </div>
-            <div className="flex flex-col gap-4 p-4 rounded-2xl text-brand">
-              <h2 className="text-lg sm:text-xl font-semibold">{item.name}</h2>
-              <p className="text-md sm:text-lg">{item.description}</p>
-              <p className="text-md sm:text-lg font-semibold">
-                {item.price.currency}
-                {item.price.standard?.current}
-              </p>
-            </div>
-          </motion.div>
+            {category}
+          </button>
         ))}
       </div>
+
+      {categories.map((category) => (
+        <section
+          key={category}
+          data-category={category}
+          ref={(el) => {
+            categoryRef.current[category] = el;
+          }}
+          className="flex flex-col gap-8 scroll-mt-[140px] sm:scroll-mt-[240px]"
+        >
+          <h2
+            className={`text-2xl sm:text-4xl w-fit font-semibold ${merriweather.className} text-brand`}
+            style={{ backgroundColor: "rgb(253 186 116 / 0.3)" }}
+          >
+            {category}
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {menu
+              .filter((item) => item.category === category)
+              .map((item, index) => (
+                <motion.div
+                  key={item.id}
+                  initial={{ opacity: 0, y: 50 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.5,
+                    ease: "easeOut",
+                    delay: index * 0.5,
+                  }}
+                  viewport={{ once: true, amount: 0.2 }}
+                  className="flex flex-col h-full"
+                >
+                  <div className="flex w-full max-h-72 aspect-square rounded-2xl sm:rounded-4xl overflow-hidden items-center justify-center">
+                    <Image
+                      src={item.src}
+                      alt={item.alt}
+                      width={1200}
+                      height={1200}
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                  <div className="flex flex-col flex-1 gap-4 p-4 rounded-2xl text-brand">
+                    <h2 className="text-lg sm:text-xl font-semibold line-clamp-2 min-h-[56px]">
+                      {item.name}
+                    </h2>
+                    <p className="flex-1 text-md sm:text-lg">
+                      {item.description}
+                    </p>
+                    <div className="flex flex-col gap-2">
+                      {item.price.options.map((option, index) => (
+                        <p
+                          key={index}
+                          className="flex justify-between text-md sm:text-lg font-semibold"
+                        >
+                          {option.label && <span>{option.label}</span>}
+                          {item.price.currency}
+                          {option.current}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+          </div>
+        </section>
+      ))}
     </section>
   );
 }

@@ -34,15 +34,14 @@ export type FacilitiesItem = {
 };
 
 export type PriceItemDetails = {
+  label: string;
   original: string;
   current: string;
 };
 
 export type PriceItem = {
   currency: string;
-  standard?: PriceItemDetails;
-  hot?: PriceItemDetails;
-  cold?: PriceItemDetails;
+  options: PriceItemDetails[];
 };
 
 export type MenuCategory =
@@ -52,13 +51,15 @@ export type MenuCategory =
   | "Pasta"
   | "Pizza"
   | "Kids Meal"
+  | "Sauce"
   | "Coffee"
   | "Non-Coffee"
   | "Tea Series"
   | "Refreshments"
   | "Canned Drinks"
   | "Air Buah"
-  | "Others";
+  | "Others"
+  | "Desserts";
 
 export type MenuItem = {
   id: string;

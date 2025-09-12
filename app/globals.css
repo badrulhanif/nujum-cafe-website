@@ -157,11 +157,17 @@
 .bg-footer-90 {
   background-color: rgba(29, 16, 0, 0.9);
 }
+
 .bg-footer-80 {
   background-color: rgba(29, 16, 0, 0.8);
 }
+
 .bg-footer-70 {
   background-color: rgba(29, 16, 0, 0.7);
+}
+
+.bg-footer-30 {
+  background-color: rgba(29, 16, 0, 0.3);
 }
 
 .border-brand {
