@@ -182,7 +182,8 @@ export const menu: MenuItem[] = [
     src: "/Images/steak-1.png",
     alt: "Steak Image 1",
     name: "The Black Angus",
-    description: "Lorem ipsum",
+    description:
+      "Premium Black Angus beef, grilled to perfection for rich, juicy flavor with every bite.",
     price: {
       currency: "RM",
       options: [
@@ -199,7 +200,8 @@ export const menu: MenuItem[] = [
     src: "/Images/steak-2.png",
     alt: "Steak Image 2",
     name: "The Grain Fed",
-    description: "Lorem ipsum",
+    description:
+      "Tender grain-fed beef, expertly grilled for a balance of flavor and succulence.",
     price: {
       currency: "RM",
       options: [
@@ -218,7 +220,8 @@ export const menu: MenuItem[] = [
     src: "/Images/steak-3.png",
     alt: "Steak Image 3",
     name: "The Wagyu",
-    description: "Lorem ipsum",
+    description:
+      "Luxurious Wagyu beef with exceptional marbling, offering melt-in-your-mouth tenderness.",
     price: {
       currency: "RM",
       options: [{ label: "Striploin", current: "150.00", original: "150.00" }],
@@ -232,7 +235,8 @@ export const menu: MenuItem[] = [
     src: "/Images/steak-4.png",
     alt: "Steak Image 4",
     name: "Nujum's Special",
-    description: "Lorem ipsum",
+    description:
+      "A chef’s signature creation blending local flavors with a hearty serving of Nujum’s fried rice.",
     price: {
       currency: "RM",
       options: [
@@ -248,7 +252,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-1.png",
     alt: "Pasta Image 1",
     name: "Carbonara Beef Bacon",
-    description: "Lorem ipsum",
+    description: "Creamy carbonara pasta topped with savory beef bacon.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "25.00", original: "25.00" }],
@@ -262,7 +266,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-2.png",
     alt: "Pasta Image 2",
     name: "Carbonara Seafood",
-    description: "Lorem ipsum",
+    description: "Rich carbonara sauce with prawns, squid, and mussels.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "36.00", original: "36.00" }],
@@ -276,7 +280,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-3.png",
     alt: "Pasta Image 3",
     name: "Carbonara Smoked Duck",
-    description: "Lorem ipsum",
+    description: "Creamy pasta with tender slices of smoked duck.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "33.00", original: "33.00" }],
@@ -290,7 +294,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-4.png",
     alt: "Pasta Image 4",
     name: "Marinara Chicken",
-    description: "Lorem ipsum",
+    description: "Classic tomato-based marinara pasta with chicken.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "22.00", original: "22.00" }],
@@ -304,7 +308,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-5.png",
     alt: "Pasta Image 5",
     name: "Marinara Seafood",
-    description: "Lorem ipsum",
+    description: "Tomato marinara pasta loaded with fresh seafood.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "28.70", original: "28.70" }],
@@ -318,7 +322,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-6.png",
     alt: "Pasta Image 6",
     name: "Bolognese Beef",
-    description: "Lorem ipsum",
+    description: "Slow-cooked minced beef in rich tomato sauce.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "25.00", original: "25.00" }],
@@ -332,7 +336,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-7.png",
     alt: "Pasta Image 7",
     name: "Alfredo Shitake Mushroom",
-    description: "Lorem ipsum",
+    description: "Creamy Alfredo pasta with earthy shiitake mushrooms.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "25.00", original: "25.00" }],
@@ -346,7 +350,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-8.png",
     alt: "Pasta Image 8",
     name: "Pesto",
-    description: "Lorem ipsum",
+    description: "Fragrant basil pesto pasta with Parmesan cheese.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "25.00", original: "25.00" }],
@@ -360,7 +364,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-9.png",
     alt: "Pasta Image 9",
     name: "Masak Lemak Cili Padi",
-    description: "Lorem ipsum",
+    description: "Fusion pasta with spicy, creamy masak lemak sauce.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "28.00", original: "28.00" }], //Missing in menu
@@ -374,7 +378,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-10.png",
     alt: "Pasta Image 10",
     name: "Masak Lemak Smoked Duck",
-    description: "Lorem ipsum",
+    description: "Creamy masak lemak sauce paired with smoked duck.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "32.00", original: "32.00" }],
@@ -388,7 +392,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-11.png",
     alt: "Pasta Image 11",
     name: "Aglio Olio Smoked Duck",
-    description: "Lorem ipsum",
+    description: "Garlic and olive oil pasta with smoked duck slices.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "26.70", original: "26.70" }],
@@ -402,7 +406,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-12.png",
     alt: "Pasta Image 12",
     name: "Aglio Olio Seafood",
-    description: "Lorem ipsum",
+    description: "Light garlic and chili pasta with seafood mix.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "28.00", original: "28.00" }],
@@ -416,7 +420,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pasta-13.png",
     alt: "Pasta Image 13",
     name: "Masak Lemak Udang",
-    description: "Lorem ipsum",
+    description: "Spicy masak lemak fusion pasta with prawns.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "32.00", original: "32.00" }],
@@ -430,7 +434,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pizza-1.png",
     alt: "Pizza Image 1",
     name: "Wagyu Pizza",
-    description: "Lorem ipsum",
+    description: "Premium wagyu beef slices on a cheesy, wood-fired pizza.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "84.00", original: "84.00" }],
@@ -444,7 +448,7 @@ export const menu: MenuItem[] = [
     src: "/Images/pizza-2.png",
     alt: "Pizza Image 2",
     name: "Beef Pepperoni Pizza",
-    description: "Lorem ipsum",
+    description: "Classic pizza topped with beef pepperoni and mozzarella.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "30.00", original: "30.00" }],
@@ -458,7 +462,7 @@ export const menu: MenuItem[] = [
     src: "/Images/kids-meal-1.png",
     alt: "Kids Meal Image 1",
     name: "Spaghetti Marinara Chicken",
-    description: "Lorem ipsum",
+    description: "Kid-sized spaghetti with chicken in marinara sauce.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.00", original: "13.00" }],
@@ -472,7 +476,7 @@ export const menu: MenuItem[] = [
     src: "/Images/kids-meal-2.png",
     alt: "Kids Meal Image 2",
     name: "Spaghetti Carbonara Chicken",
-    description: "Lorem ipsum",
+    description: "Creamy carbonara spaghetti with tender chicken pieces.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "10.00", original: "10.00" }],
@@ -486,7 +490,7 @@ export const menu: MenuItem[] = [
     src: "/Images/kids-meal-3.png",
     alt: "Kids Meal Image 3",
     name: "Cultured Drink Vitagen",
-    description: "Lorem ipsum",
+    description: "Refreshing cultured drink packed with probiotics.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "4.00", original: "4.00" }],
@@ -500,7 +504,7 @@ export const menu: MenuItem[] = [
     src: "/Images/kids-meal-4.png",
     alt: "Kids Meal Image 4",
     name: "Blackcurrant Juice Ribena",
-    description: "Lorem ipsum",
+    description: "Sweet and tangy Ribena blackcurrant juice.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "7.00", original: "7.00" }],
@@ -514,7 +518,7 @@ export const menu: MenuItem[] = [
     src: "/Images/sauce-1.png",
     alt: "Sauce Image 1",
     name: "Mushroom Sauce",
-    description: "Lorem ipsum",
+    description: "Rich, creamy sauce made with fresh mushrooms.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "3.00", original: "3.00" }],
@@ -528,7 +532,7 @@ export const menu: MenuItem[] = [
     src: "/Images/sauce-2.png",
     alt: "Sauce Image 2",
     name: "Blackpepper Sauce",
-    description: "Lorem ipsum",
+    description: "Spicy and aromatic black pepper sauce.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "3.00", original: "3.00" }],
@@ -542,7 +546,7 @@ export const menu: MenuItem[] = [
     src: "/Images/sauce-3.png",
     alt: "Sauce Image 3",
     name: "Garlic Sauce",
-    description: "Lorem ipsum",
+    description: "Creamy garlic sauce with a fragrant kick.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "3.00", original: "3.00" }],
@@ -556,7 +560,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-1.png",
     alt: "Coffee Image 1",
     name: "Americano",
-    description: "Lorem ipsum",
+    description: "Smooth black coffee with a bold aroma.",
     price: {
       currency: "RM",
       options: [
@@ -573,7 +577,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-2.png",
     alt: "Coffee Image 2",
     name: "Spanish Latte",
-    description: "Lorem ipsum",
+    description: "Rich latte with caramelized milk sweetness.",
     price: {
       currency: "RM",
       options: [
@@ -590,7 +594,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-3.png",
     alt: "Coffee Image 3",
     name: "Cafe Latte",
-    description: "Lorem ipsum",
+    description: "Classic espresso with steamed milk foam.",
     price: {
       currency: "RM",
       options: [
@@ -607,7 +611,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-4.png",
     alt: "Coffee Image 4",
     name: "Caramel Latte",
-    description: "Lorem ipsum",
+    description: "Smooth latte blended with sweet caramel syrup.",
     price: {
       currency: "RM",
       options: [
@@ -624,7 +628,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-5.png",
     alt: "Coffee Image 5",
     name: "Vanilla Latte",
-    description: "Lorem ipsum",
+    description: "Creamy latte infused with rich vanilla flavor.",
     price: {
       currency: "RM",
       options: [
@@ -641,7 +645,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-6.png",
     alt: "Coffee Image 6",
     name: "Butterscotch Latte",
-    description: "Lorem ipsum",
+    description: "Velvety latte with a buttery butterscotch twist.",
     price: {
       currency: "RM",
       options: [
@@ -658,7 +662,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-7.png",
     alt: "Coffee Image 7",
     name: "Hazelnut Latte",
-    description: "Lorem ipsum",
+    description: "Nutty hazelnut flavor blended with espresso and milk.",
     price: {
       currency: "RM",
       options: [
@@ -675,7 +679,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-8.png",
     alt: "Coffee Image 8",
     name: "Cappucino",
-    description: "Lorem ipsum",
+    description: "Classic cappuccino with frothy milk and bold espresso.",
     price: {
       currency: "RM",
       options: [
@@ -692,7 +696,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-9.png",
     alt: "Coffee Image 9",
     name: "Mocha",
-    description: "Lorem ipsum",
+    description: "Espresso and chocolate combined into a creamy mocha.",
     price: {
       currency: "RM",
       options: [
@@ -709,7 +713,7 @@ export const menu: MenuItem[] = [
     src: "/Images/coffee-10.png",
     alt: "Coffee Image 10",
     name: "Caramel Machiato",
-    description: "Lorem ipsum",
+    description: "Layered espresso with steamed milk and caramel drizzle.",
     price: {
       currency: "RM",
       options: [
@@ -726,7 +730,7 @@ export const menu: MenuItem[] = [
     src: "/Images/non-coffee-1.png",
     alt: "Non-Coffee Image 1",
     name: "Chocolate",
-    description: "Lorem ipsum",
+    description: "Rich hot chocolate with creamy milk.",
     price: {
       currency: "RM",
       options: [
@@ -743,7 +747,7 @@ export const menu: MenuItem[] = [
     src: "/Images/non-coffee-2.png",
     alt: "Non-Coffee Image 2",
     name: "Matcha Latte",
-    description: "Lorem ipsum",
+    description: "Japanese green tea latte with a smooth finish.",
     price: {
       currency: "RM",
       options: [
@@ -760,7 +764,7 @@ export const menu: MenuItem[] = [
     src: "/Images/tea-series-1.png",
     alt: "Tea Series Image 1",
     name: "Teh Tarik",
-    description: "Lorem ipsum",
+    description: "Malaysian pulled milk tea with frothy top.",
     price: {
       currency: "RM",
       options: [
@@ -777,7 +781,7 @@ export const menu: MenuItem[] = [
     src: "/Images/tea-series-2.png",
     alt: "Tea Series Image 2",
     name: "Nestea House Blend",
-    description: "Lorem ipsum",
+    description: "Refreshing house blend instant tea drink.",
     price: {
       currency: "RM",
       options: [
@@ -794,7 +798,7 @@ export const menu: MenuItem[] = [
     src: "/Images/tea-series-3.png",
     alt: "Tea Series Image 3",
     name: "Peach Tea",
-    description: "Lorem ipsum",
+    description: "Fragrant peach-flavored tea with a sweet aroma.",
     price: {
       currency: "RM",
       options: [{ label: "Hot", current: "6.90", original: "6.90" }],
@@ -808,7 +812,7 @@ export const menu: MenuItem[] = [
     src: "/Images/tea-series-4.png",
     alt: "Tea Series Image 4",
     name: "Ice Lemon Tea",
-    description: "Lorem ipsum",
+    description: "Refreshing iced tea with zesty lemon flavor.",
     price: {
       currency: "RM",
       options: [{ label: "Hot", current: "6.90", original: "6.90" }],
@@ -822,7 +826,7 @@ export const menu: MenuItem[] = [
     src: "/Images/refreshments-1.png",
     alt: "Refreshments Image 1",
     name: "Blue Ocean",
-    description: "Lorem ipsum",
+    description: "Tropical blue mocktail with a citrusy kick.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.50", original: "13.50" }],
@@ -836,7 +840,7 @@ export const menu: MenuItem[] = [
     src: "/Images/refreshments-2.png",
     alt: "Refreshments Image 2",
     name: "Lemon With Honey",
-    description: "Lorem ipsum",
+    description: "Zesty lemon drink balanced with natural honey.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.50", original: "13.500" }],
@@ -850,7 +854,7 @@ export const menu: MenuItem[] = [
     src: "/Images/refreshments-3.png",
     alt: "Refreshments Image 3",
     name: "Green Apple",
-    description: "Lorem ipsum",
+    description: "Crisp and refreshing green apple cooler.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.50", original: "13.50" }],
@@ -864,7 +868,7 @@ export const menu: MenuItem[] = [
     src: "/Images/refreshments-4.png",
     alt: "Refreshments Image 4",
     name: "Mango",
-    description: "Lorem ipsum",
+    description: "Sweet mango drink with tropical flavor.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.50", original: "13.50" }],
@@ -878,7 +882,7 @@ export const menu: MenuItem[] = [
     src: "/Images/refreshments-5.png",
     alt: "Refreshments Image 5",
     name: "Passion Fruit",
-    description: "Lorem ipsum",
+    description: "Tangy passion fruit drink with a tropical taste.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.50", original: "13.50" }],
@@ -892,7 +896,7 @@ export const menu: MenuItem[] = [
     src: "/Images/refreshments-6.png",
     alt: "Refreshments Image 6",
     name: "Strawberry",
-    description: "Lorem ipsum",
+    description: "Sweet strawberry refresher with fruity notes.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "13.50", original: "13.50" }],
@@ -906,7 +910,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-1.png",
     alt: "Canned Drinks Image 1",
     name: "Coca Cola (Hausboom)",
-    description: "Lorem ipsum",
+    description: "Classic fizzy cola drink in a can.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "4.50", original: "4.50" }],
@@ -920,7 +924,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-2.png",
     alt: "Canned Drinks Image 2",
     name: "Oren Bodo (Hausboom)",
-    description: "Lorem ipsum",
+    description: "Sweet and tangy orange-flavored soda.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "4.50", original: "4.50" }],
@@ -934,7 +938,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-3.png",
     alt: "Canned Drinks Image 3",
     name: "Strawberry Candy (Hausboom)",
-    description: "Lorem ipsum",
+    description: "Fizzy soda with a strawberry candy twist.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "4.50", original: "4.50" }],
@@ -948,7 +952,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-4.png",
     alt: "Canned Drinks Image 4",
     name: "Grapple (Hausboom)",
-    description: "Lorem ipsum",
+    description: "Refreshing grape and apple soda blend.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "4.50", original: "4.50" }],
@@ -962,7 +966,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-5.png",
     alt: "Canned Drinks Image 5",
     name: "A&W",
-    description: "Lorem ipsum",
+    description: "Classic creamy root beer in a can.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "5.00", original: "5.00" }],
@@ -976,7 +980,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-6.png",
     alt: "Canned Drinks Image 6",
     name: "Sprite",
-    description: "Lorem ipsum",
+    description: "Crisp lemon-lime flavored soda.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "5.00", original: "5.00" }],
@@ -990,7 +994,7 @@ export const menu: MenuItem[] = [
     src: "/Images/canned-drinks-7.png",
     alt: "Canned Drinks Image 7",
     name: "100 Plus",
-    description: "Lorem ipsum",
+    description: "Refreshing isotonic drink for hydration.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "5.00", original: "5.00" }],
@@ -1004,7 +1008,7 @@ export const menu: MenuItem[] = [
     src: "/Images/air-buah-1.png",
     alt: "Air Buah Image 1",
     name: "Fresh Oren",
-    description: "Lorem ipsum",
+    description: "Freshly squeezed orange juice.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "8.90", original: "8.90" }],
@@ -1018,7 +1022,7 @@ export const menu: MenuItem[] = [
     src: "/Images/air-buah-2.png",
     alt: "Air Buah Image 2",
     name: "Tembikai",
-    description: "Lorem ipsum",
+    description: "Refreshing juice made from ripe watermelon.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "8.90", original: "8.90" }],
@@ -1032,7 +1036,7 @@ export const menu: MenuItem[] = [
     src: "/Images/air-buah-3.png",
     alt: "Air Buah Image 3",
     name: "Epal",
-    description: "Lorem ipsum",
+    description: "Crisp and natural apple juice.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "8.90", original: "8.90" }],
@@ -1046,7 +1050,7 @@ export const menu: MenuItem[] = [
     src: "/Images/others-1.png",
     alt: "Others Image 1",
     name: "Air Mineral",
-    description: "Lorem ipsum",
+    description: "Refreshing bottled mineral water.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "3.00", original: "3.00" }],
@@ -1060,7 +1064,7 @@ export const menu: MenuItem[] = [
     src: "/Images/desserts-1.png",
     alt: "Desserts Image 1",
     name: "Tiramisu Chilled Cheese Cake",
-    description: "Lorem ipsum",
+    description: "Creamy chilled cheesecake with tiramisu layers.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "21.00", original: "21.00" }],
@@ -1074,7 +1078,7 @@ export const menu: MenuItem[] = [
     src: "/Images/desserts-2.png",
     alt: "Desserts Image 2",
     name: "Mille Crepe Tiramisu Cake",
-    description: "Lorem ipsum",
+    description: "Layered crepe cake with tiramisu cream.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "23.00", original: "23.00" }],
@@ -1088,7 +1092,7 @@ export const menu: MenuItem[] = [
     src: "/Images/desserts-3.png",
     alt: "Desserts Image 3",
     name: "Tiramisu Chilled Cheese Cake",
-    description: "Lorem ipsum",
+    description: "Soft and creamy basque burnt cheesecake.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "19.00", original: "19.00" }],
@@ -1102,7 +1106,7 @@ export const menu: MenuItem[] = [
     src: "/Images/desserts-4.png",
     alt: "Desserts Image 4",
     name: "Cookies & Cream Filled Cheese Cake",
-    description: "Lorem ipsum",
+    description: "Chilled cheesecake with cookies & cream layers.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "19.00", original: "19.00" }],
@@ -1116,7 +1120,8 @@ export const menu: MenuItem[] = [
     src: "/Images/desserts-5.png",
     alt: "Desserts Image 5",
     name: "Rainbow Mousse Cake",
-    description: "Lorem ipsum",
+    description:
+      "A delightful layered mousse cake with vibrant rainbow colors, offering a light, creamy texture and a sweet, refreshing taste in every bite.",
     price: {
       currency: "RM",
       options: [{ label: "", current: "19.00", original: "19.00" }],
