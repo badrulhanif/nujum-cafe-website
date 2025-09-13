@@ -99,7 +99,7 @@ export default function MenuPage() {
                       {item.price.options.map((option, index) => (
                         <p
                           key={index}
-                          className="flex justify-between text-lg font-semibold text-amber-950"
+                          className="flex justify-between text-lg font-semibold text-amber-900"
                         >
                           {option.label && <span>{option.label}</span>}
                           {item.price.currency}
