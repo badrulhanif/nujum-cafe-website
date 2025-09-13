@@ -19,6 +19,11 @@ export default function HeroSection() {
             A modern hideout for comfort food and strong coffee
           </p>
         </div>
+        <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+          <span className="relative block mt-6 h-12 w-6 rounded-full border-2 border-white">
+            <span className="absolute left-1/2 top-2 h-2 w-2 -ml-1 rounded-full animate-scroll bg-white" />
+          </span>
+        </div>
       </div>
     </section>
   );
