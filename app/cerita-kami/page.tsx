@@ -20,14 +20,14 @@ export default function CeritaKamiPage() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="w-full overflow-hidden"
+        className="w-full h-72 sm:h-150 overflow-hidden"
       >
         <Image
           src="/Images/cerita-kami-hero-banner.png"
           alt="Overview Banner"
           width={1600}
           height={1600}
-          className="object-cover"
+          className="w-full h-full object-cover"
         />
       </motion.div>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 sm:py-8">
