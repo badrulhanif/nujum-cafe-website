@@ -86,7 +86,14 @@ export default function CeritaKamiPage() {
         >
           Nilai Teras Nujum
         </h2>
-        <div className="flex flex-col w-full p-16 gap-8 sm:gap-16 items-center justify-center rounded-2xl sm:rounded-4xl text-white bg-gradient-to-r from-[#1D1000] to-[#472701]">
+        <div className="relative flex flex-col w-full p-16 gap-8 sm:gap-16 items-center justify-center rounded-2xl sm:rounded-4xl text-white bg-gradient-to-r from-[#1D1000] to-[#472701]">
+          <Image
+            src="/Images/bg-quote-design-1.png"
+            alt="Overview Banner"
+            width={150}
+            height={150}
+            className="absolute -top-8 -left-4 object-cover"
+          />
           <h2
             className={`text-center ${merriweather.className} text-2xl sm:text-4xl`}
           >
@@ -98,6 +105,13 @@ export default function CeritaKamiPage() {
             pengalaman unik bagi pelanggan kami dengan inovasi yang dibawa ke
             dalam setiap menu.
           </p>
+          <Image
+            src="/Images/bg-quote-design-2.png"
+            alt="Overview Banner"
+            width={150}
+            height={150}
+            className="absolute -bottom-8 -right-4 object-cover"
+          />
         </div>
       </motion.div>
       <div className="flex flex-col gap-8 sm:gap-16 py-8">
@@ -132,10 +146,16 @@ export default function CeritaKamiPage() {
               <h2 className="text-lg sm:text-xl font-semibold">Alamat</h2>
               <div className="flex gap-4 items-start">
                 <Shop className="w-6 h-6" />
-                <p className="text-md sm:text-lg">
-                  Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
-                  75460 Melaka
-                </p>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
+                >
+                  <span className="hover:underline">
+                    Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
+                    75460 Melaka
+                  </span>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col gap-4">

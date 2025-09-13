@@ -89,10 +89,16 @@ export default function RootLayout({
                 <BrandLogo className="w-16 sm:w-24 h-8 sm:h-12 text-white" />
               </Link>
               <p>Nujum Cafe</p>
-              <p>
-                Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
-                75460 Melaka
-              </p>
+              <Link
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
+              >
+                <span className="hover:underline">
+                  Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
+                  75460 Melaka
+                </span>
+              </Link>
               <div className="flex flex-col gap-4">
                 <Link
                   href="tel:+601116174226"
