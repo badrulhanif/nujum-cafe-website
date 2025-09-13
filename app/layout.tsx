@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Nujum Cafe",
     title: "Nujum Cafe • Melaka",
     description:
-      "Magical flavors await: pastas, steaks, pizzas & more at Nujum Cafe. Visit us 4PM–11PM in Melaka.",
+      "NUJUM Cafe in Melaka — serving pastas, steaks, pizzas & more. Experience magical taste in a cozy, stylish ambiance. Open daily 4PM–11PM.",
     images: [
       {
         url: "https://nujum-cafe-website.vercel.app/Images/banner.png",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nujum Cafe • Melaka",
     description:
-      "Magical flavors await: pastas, steaks, pizzas & more at Nujum Cafe. Visit us 4PM–11PM in Melaka.",
+      "NUJUM Cafe in Melaka — serving pastas, steaks, pizzas & more. Experience magical taste in a cozy, stylish ambiance. Open daily 4PM–11PM.",
     images: ["https://nujum-cafe-website.vercel.app/Images/banner.png"],
     creator: "@nujum.cafe",
   },
