@@ -129,7 +129,7 @@ export const menu: MenuItem[] = [
       options: [{ label: "", current: "48.00", original: "48.00" }],
     },
     isDiscount: false,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "grilled-chicken",
@@ -192,7 +192,7 @@ export const menu: MenuItem[] = [
       ],
     },
     isDiscount: false,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "the-grain-fed",
@@ -205,8 +205,8 @@ export const menu: MenuItem[] = [
     price: {
       currency: "RM",
       options: [
-        { label: "Striploin (250g)", current: "45.00", original: "45.00" }, //Missing in menu
-        { label: "Striploin (300g)", current: "53.00", original: "53.00" }, //Missing in menu
+        { label: "Striploin (250g)", current: "45.00", original: "45.00" },
+        { label: "Striploin (300g)", current: "53.00", original: "53.00" },
         { label: "Ribeye (250g)", current: "60.00", original: "60.00" },
         { label: "Ribeye (300g)", current: "71.00", original: "71.00" },
       ],
@@ -239,9 +239,7 @@ export const menu: MenuItem[] = [
       "A chef’s signature creation blending local flavors with a hearty serving of Nujum’s fried rice.",
     price: {
       currency: "RM",
-      options: [
-        { label: "Nujum's Fried Rice", current: "16.00", original: "16.00" },
-      ],
+      options: [{ label: "Fried Rice", current: "16.00", original: "16.00" }],
     },
     isDiscount: false,
     isBestSeller: false,
@@ -286,7 +284,7 @@ export const menu: MenuItem[] = [
       options: [{ label: "", current: "33.00", original: "33.00" }],
     },
     isDiscount: false,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "marinara-chicken",
@@ -367,7 +365,7 @@ export const menu: MenuItem[] = [
     description: "Fusion pasta with spicy, creamy masak lemak sauce.",
     price: {
       currency: "RM",
-      options: [{ label: "", current: "28.00", original: "28.00" }], //Missing in menu
+      options: [{ label: "", current: "28.00", original: "28.00" }],
     },
     isDiscount: false,
     isBestSeller: false,
@@ -398,7 +396,7 @@ export const menu: MenuItem[] = [
       options: [{ label: "", current: "26.70", original: "26.70" }],
     },
     isDiscount: false,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "aglio-olio-seafood",
@@ -412,7 +410,7 @@ export const menu: MenuItem[] = [
       options: [{ label: "", current: "28.00", original: "28.00" }],
     },
     isDiscount: false,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "masak-lemak-udang",
@@ -454,7 +452,7 @@ export const menu: MenuItem[] = [
       options: [{ label: "", current: "30.00", original: "30.00" }],
     },
     isDiscount: false,
-    isBestSeller: false,
+    isBestSeller: true,
   },
   {
     id: "spaghetti-marinara-chicken",

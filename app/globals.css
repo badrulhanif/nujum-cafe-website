@@ -173,3 +173,12 @@
 .border-brand {
   border-color: #1d1000;
 }
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE + Edge */
+  scrollbar-width: none; /* Firefox */
+}

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 import { merriweather } from "@/config/font";
 import { menu } from "@/data/menu";
@@ -28,14 +28,14 @@ export default function MenuPage() {
       >
         Menu
       </h2>
-      <div className="flex gap-4 sticky top-18 sm:top-30 z-50 overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent">
+      <div className="flex gap-4 -mx-4 sm:mx-0 sticky top-18 sm:top-30 z-50 overflow-x-auto overflow-y-hidden whitespace-nowrap scrollbar-none scrollbar-thumb-transparent scrollbar-track-transparent bg-custom">
         {categories.map((category) => (
           <button
             key={category}
             onClick={() => handleScrollToCategory(category)}
             className={`p-4 text-left flex-shrink-0 ${
               activeCategory === category
-                ? "text-brand bg-custom"
+                ? "text-white bg-footer"
                 : "text-brand"
             }`}
           >
@@ -55,7 +55,6 @@ export default function MenuPage() {
         >
           <h2
             className={`text-2xl sm:text-4xl w-fit font-semibold ${merriweather.className} text-brand`}
-            style={{ backgroundColor: "rgb(253 186 116 / 0.3)" }}
           >
             {category}
           </h2>
@@ -70,12 +69,12 @@ export default function MenuPage() {
                   transition={{
                     duration: 0.5,
                     ease: "easeOut",
-                    delay: index * 0.5,
+                    delay: index * 0.2,
                   }}
                   viewport={{ once: true, amount: 0.2 }}
-                  className="flex flex-col h-full"
+                  className="flex flex-col gap-4 p-4 h-full rounded-4xl overflow-hidden bg-footer-30"
                 >
-                  <div className="flex w-full max-h-72 aspect-square rounded-2xl sm:rounded-4xl overflow-hidden items-center justify-center">
+                  <div className="flex w-full max-h-72 aspect-square rounded-2xl overflow-hidden items-center justify-center">
                     <Image
                       src={item.src}
                       alt={item.alt}
@@ -84,9 +83,14 @@ export default function MenuPage() {
                       className="object-cover w-full h-full"
                     />
                   </div>
-                  <div className="flex flex-col flex-1 gap-4 p-4 rounded-2xl text-brand">
-                    <h2 className="text-lg sm:text-xl font-semibold line-clamp-2 min-h-[56px]">
+                  <div className="flex flex-col flex-1 gap-4 p-2 text-brand">
+                    <h2 className="text-xl font-semibold">
                       {item.name}
+                      {item.isBestSeller && (
+                        <p className="px-1 py-0.5 w-fit text-base font-normal text-white bg-red-500">
+                          Best Seller
+                        </p>
+                      )}
                     </h2>
                     <p className="flex-1 text-md sm:text-lg">
                       {item.description}
@@ -95,7 +99,7 @@ export default function MenuPage() {
                       {item.price.options.map((option, index) => (
                         <p
                           key={index}
-                          className="flex justify-between text-md sm:text-lg font-semibold"
+                          className="flex justify-between text-lg font-semibold text-amber-950"
                         >
                           {option.label && <span>{option.label}</span>}
                           {item.price.currency}
