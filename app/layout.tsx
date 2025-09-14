@@ -95,7 +95,7 @@ export default function RootLayout({
                 href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
               >
                 <span className="hover:underline">
-                  Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
+                  Lot 450/451, <br /> Bandar Bukit Baru Seksyen 5, <br />
                   75460 Melaka
                 </span>
               </Link>
