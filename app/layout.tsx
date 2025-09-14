@@ -88,7 +88,7 @@ export default function RootLayout({
               <Link href="/">
                 <BrandLogo className="w-16 sm:w-24 h-8 sm:h-12 text-white" />
               </Link>
-              <p>Nujum Cafe</p>
+              <p>NUJUM CAFE</p>
               <Link
                 target="_blank"
                 rel="noopener noreferrer"
