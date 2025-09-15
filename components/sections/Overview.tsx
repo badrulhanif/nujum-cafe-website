@@ -47,7 +47,7 @@ export default function OverviewSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
         viewport={{ once: true, amount: 0.2 }}
-        className="w-full rounded-2xl sm:rounded-4xl overflow-hidden"
+        className="w-full h-56 sm:h-[640px] rounded-2xl sm:rounded-4xl overflow-hidden"
       >
         <Image
           src="/Images/overview-banner.png"

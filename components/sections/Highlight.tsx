@@ -35,14 +35,14 @@ export default function HighlightSection() {
                 delay: index * 0.5,
               }}
               viewport={{ once: true, amount: 0.2 }}
-              className="w-full rounded-2xl sm:rounded-4xl overflow-hidden"
+              className="w-full h-76 sm:h-[480px] rounded-2xl sm:rounded-4xl overflow-hidden"
             >
               <Image
                 src={item.src}
                 alt={item.alt}
                 width={1600}
                 height={1200}
-                className="object-cover w-full h-auto"
+                className="object-cover w-full h-full"
               />
             </motion.div>
           ))}
