@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { Phone, Instagram, Tiktok } from "iconoir-react";
 import "@/app/globals.css";
 
@@ -8,7 +9,7 @@ import Navbar from "@/components/ui/Navbar";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nujum-cafe-website.vercel.app"),
+  metadataBase: new URL("https://www.nujumcafe.com"),
   title: {
     default: "Nujum Cafe • Melaka",
     template: "%s | Nujum Cafe",
@@ -25,22 +26,20 @@ export const metadata: Metadata = {
     "Steak Melaka",
     "Cafe with ambience Melaka",
   ],
-  authors: [
-    { name: "Nujum Cafe", url: "https://nujum-cafe-website.vercel.app" },
-  ],
+  authors: [{ name: "Nujum Cafe", url: "https://www.nujumcafe.com" }],
   creator: "Nujum Cafe",
   publisher: "Nujum Cafe",
   openGraph: {
     type: "website",
     locale: "en_MY",
-    url: "https://nujum-cafe-website.vercel.app",
+    url: "https://www.nujumcafe.com",
     siteName: "Nujum Cafe",
     title: "Nujum Cafe • Melaka",
     description:
       "NUJUM Cafe in Melaka — serving pastas, steaks, pizzas & more. Experience magical taste in a cozy, stylish ambiance. Open daily 4PM–11PM.",
     images: [
       {
-        url: "https://nujum-cafe-website.vercel.app/Images/banner.png",
+        url: "https://www.nujumcafe.com/Images/banner.png",
         width: 1200,
         height: 630,
         alt: "Nujum Cafe Banner",
@@ -52,11 +51,11 @@ export const metadata: Metadata = {
     title: "Nujum Cafe • Melaka",
     description:
       "NUJUM Cafe in Melaka — serving pastas, steaks, pizzas & more. Experience magical taste in a cozy, stylish ambiance. Open daily 4PM–11PM.",
-    images: ["https://nujum-cafe-website.vercel.app/Images/banner.png"],
+    images: ["https://www.nujumcafe.com/Images/banner.png"],
     creator: "@nujum.cafe",
   },
   alternates: {
-    canonical: "https://nujum-cafe-website.vercel.app",
+    canonical: "https://www.nujumcafe.com",
   },
   category: "Cafe",
   robots: {
@@ -79,6 +78,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-K04WZGQE7M"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-K04WZGQE7M');
+          `}
+        </Script>
+      </head>
       <body className="relative antialiased overflow-x-hidden overflow-y-auto bg-custom">
         <Navbar />
         <main className="w-full">{children}</main>
