@@ -606,7 +606,7 @@ export const menu: MenuItem[] = [
   {
     id: "caramel-latte",
     category: "Coffee",
-    src: "/Images/coffee-4.png",
+    src: "/Images/coffee-5.png",
     alt: "Coffee Image 4",
     name: "Caramel Latte",
     description: "Smooth latte blended with sweet caramel syrup.",
@@ -640,7 +640,7 @@ export const menu: MenuItem[] = [
   {
     id: "butterscotch-latte",
     category: "Coffee",
-    src: "/Images/coffee-6.png",
+    src: "/Images/coffee-5.png",
     alt: "Coffee Image 6",
     name: "Butterscotch Latte",
     description: "Velvety latte with a buttery butterscotch twist.",
@@ -657,7 +657,7 @@ export const menu: MenuItem[] = [
   {
     id: "hazelnut-latte",
     category: "Coffee",
-    src: "/Images/coffee-7.png",
+    src: "/Images/coffee-5.png",
     alt: "Coffee Image 7",
     name: "Hazelnut Latte",
     description: "Nutty hazelnut flavor blended with espresso and milk.",
