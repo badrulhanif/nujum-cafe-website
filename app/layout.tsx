@@ -29,6 +29,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Nujum Cafe", url: "https://www.nujumcafe.com" }],
   creator: "Nujum Cafe",
   publisher: "Nujum Cafe",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_MY",
@@ -48,11 +53,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@nujumcafe",
+    creator: "@nujumcafe",
     title: "Nujum Cafe • Melaka",
     description:
       "NUJUM Cafe in Melaka — serving pastas, steaks, pizzas & more. Experience magical taste in a cozy, stylish ambiance. Open daily 4PM–11PM.",
     images: ["https://www.nujumcafe.com/Images/banner.png"],
-    creator: "@nujum.cafe",
   },
   alternates: {
     canonical: "https://www.nujumcafe.com",
