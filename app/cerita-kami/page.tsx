@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Shop, Phone, Instagram, Tiktok } from "iconoir-react";
+import { Shop, Phone, Instagram, Tiktok, Clock } from "iconoir-react";
 
 import { merriweather } from "@/config/font";
 
@@ -152,8 +152,6 @@ export default function CeritaKamiPage() {
                   href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
                 >
                   <span className="hover:underline">
-                    Tuesday - Sunday <br />
-                    4–11 pm <br /> <br />
                     Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
                     75460 Melaka
                   </span>

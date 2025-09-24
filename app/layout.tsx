@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Script from "next/script";
-import { Phone, Instagram, Tiktok } from "iconoir-react";
+import { Phone, Instagram, Tiktok, Shop, Clock } from "iconoir-react";
 import "@/app/globals.css";
 
 import BrandLogo from "@/components/icons/BrandLogo";
@@ -128,24 +128,39 @@ export default function RootLayout({
                 <BrandLogo className="w-16 sm:w-24 h-8 sm:h-12 text-white" />
               </Link>
               <p>NUJUM CAFE</p>
-              <Link
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
-              >
-                <span className="hover:underline">
-                  Tuesday - Sunday <br />
-                  4–11 pm <br /> <br />
-                  Lot 450/451, <br /> Bandar Bukit Baru Seksyen 5, <br />
-                  75460 Melaka
+              <div className="flex flex-col gap-2 items-start">
+                <span className="flex gap-2 items-center text-secondary-50">
+                  <Clock className="w-5 h-5" strokeWidth={2} />
+                  Waktu Operasi
                 </span>
-              </Link>
-              <div className="flex flex-col gap-4">
+                <p>
+                  Selasa - Ahad <br />
+                  4–11 pm
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 items-start">
+                <span className="flex gap-2 items-center text-secondary-50">
+                  <Shop className="w-5 h-5" strokeWidth={2} /> Alamat
+                </span>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
+                >
+                  <span className="hover:underline">
+                    Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
+                    75460 Melaka
+                  </span>
+                </Link>
+              </div>
+              <div className="flex flex-col gap-2 items-start">
+                <span className="flex gap-2 items-center text-secondary-50">
+                  <Phone className="w-5 h-5" strokeWidth={2} /> Telefon
+                </span>
                 <Link
                   href="tel:+601116174226"
                   className="flex items-center gap-2"
                 >
-                  <Phone className="w-4 h-4" strokeWidth={2} />
                   <span className="hover:underline">+60 11-16174226</span>
                 </Link>
               </div>
