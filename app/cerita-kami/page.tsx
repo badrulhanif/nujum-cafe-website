@@ -152,10 +152,10 @@ export default function CeritaKamiPage() {
                   href="https://maps.app.goo.gl/RxrynyY47KomLvfp7"
                 >
                   <span className="hover:underline">
-                    Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
-                    75460 Melaka <br /> <br />
                     Tuesday - Sunday <br />
-                    4–11 pm
+                    4–11 pm <br /> <br />
+                    Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
+                    75460 Melaka
                   </span>
                 </Link>
               </div>
