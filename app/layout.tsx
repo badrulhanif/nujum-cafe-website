@@ -87,16 +87,40 @@ export default function RootLayout({
     "@type": "CafeOrCoffeeShop",
     name: "Nujum Cafe",
     image: "https://www.nujumcafe.com/Images/banner.png",
-    url: "https://www.nujumcafe.com",
+    url: "https://www.nujumcafe.com/",
     telephone: "+601116174226",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Lot 450/451, Bandar Bukit Baru Seksyen 5",
       addressLocality: "Melaka",
       postalCode: "75460",
-      addressCountry: "MY",
+      addressCountry: {
+        "@type": "Country",
+        name: "MY",
+      },
     },
-    openingHours: "Tuesday-Sunday 16:00-23:00",
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 2.218737453300185,
+      longitude: 102.2537536714369,
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+        opens: "16:00",
+        closes: "23:00",
+      },
+    ],
+    servesCuisine: ["Western", "Pasta", "Pizza", "Steak", "Cafe Beverages"],
+    priceRange: "RM",
     sameAs: [
       "https://www.instagram.com/nujum.cafe/",
       "https://www.tiktok.com/@nujum.cafe",
