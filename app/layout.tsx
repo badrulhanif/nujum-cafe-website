@@ -82,6 +82,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    name: "Nujum Cafe",
+    image: "https://www.nujumcafe.com/Images/banner.png",
+    url: "https://www.nujumcafe.com",
+    telephone: "+601116174226",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Lot 450/451, Bandar Bukit Baru Seksyen 5",
+      addressLocality: "Melaka",
+      postalCode: "75460",
+      addressCountry: "MY",
+    },
+    openingHours: "Tuesday-Sunday 16:00-23:00",
+    sameAs: [
+      "https://www.instagram.com/nujum.cafe/",
+      "https://www.tiktok.com/@nujum.cafe",
+    ],
+  };
   return (
     <html lang="en">
       <head>
@@ -185,6 +205,10 @@ export default function RootLayout({
             </span>
           </div>
         </footer>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
       </body>
     </html>
   );

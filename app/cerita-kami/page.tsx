@@ -153,7 +153,9 @@ export default function CeritaKamiPage() {
                 >
                   <span className="hover:underline">
                     Lot 450/451 <br /> Bandar Bukit Baru Seksyen 5 <br />
-                    75460 Melaka
+                    75460 Melaka <br /> <br />
+                    Tuesday - Sunday <br />
+                    4–11 pm
                   </span>
                 </Link>
               </div>
