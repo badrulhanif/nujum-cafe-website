@@ -120,7 +120,7 @@ export default function RootLayout({
       },
     ],
     servesCuisine: ["Western", "Pasta", "Pizza", "Steak", "Cafe Beverages"],
-    priceRange: "RM",
+    priceRange: "$$",
     sameAs: [
       "https://www.instagram.com/nujum.cafe/",
       "https://www.tiktok.com/@nujum.cafe",
