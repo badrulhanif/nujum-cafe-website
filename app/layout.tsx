@@ -82,50 +82,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    name: "Nujum Cafe",
-    image: "https://www.nujumcafe.com/Images/banner.png",
-    url: "https://www.nujumcafe.com/",
-    telephone: "+601116174226",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "Lot 450/451, Bandar Bukit Baru Seksyen 5",
-      addressLocality: "Melaka",
-      postalCode: "75460",
-      addressCountry: {
-        "@type": "Country",
-        name: "MY",
-      },
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 2.218737453300185,
-      longitude: 102.2537536714369,
-    },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: [
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday",
-        ],
-        opens: "16:00",
-        closes: "23:00",
-      },
-    ],
-    servesCuisine: ["Western", "Pasta", "Pizza", "Steak", "Cafe Beverages"],
-    priceRange: "$$",
-    sameAs: [
-      "https://www.instagram.com/nujum.cafe/",
-      "https://www.tiktok.com/@nujum.cafe",
-    ],
-  };
   return (
     <html lang="en">
       <head>
@@ -140,6 +96,62 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-K04WZGQE7M');
           `}
+        </Script>
+        <Script
+          id="ldjson-cafe"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CafeOrCoffeeShop",
+            name: "Nujum Cafe",
+            image: "https://www.nujumcafe.com/Images/banner.png",
+            url: "https://www.nujumcafe.com/",
+            telephone: "+601116174226",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Lot 450/451, Bandar Bukit Baru Seksyen 5",
+              addressLocality: "Melaka",
+              postalCode: "75460",
+              addressCountry: {
+                "@type": "Country",
+                name: "MY",
+              },
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 2.218737453300185,
+              longitude: 102.2537536714369,
+            },
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+                opens: "16:00",
+                closes: "23:00",
+              },
+            ],
+            servesCuisine: [
+              "Western",
+              "Pasta",
+              "Pizza",
+              "Steak",
+              "Cafe Beverages",
+            ],
+            priceRange: "RM",
+            sameAs: [
+              "https://www.instagram.com/nujum.cafe/",
+              "https://www.tiktok.com/@nujum.cafe",
+            ],
+          })}
         </Script>
       </head>
       <body className="relative antialiased overflow-x-hidden overflow-y-auto bg-custom">
@@ -246,10 +258,6 @@ export default function RootLayout({
             </span>
           </div>
         </footer>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
       </body>
     </html>
   );
