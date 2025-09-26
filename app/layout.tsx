@@ -149,7 +149,7 @@ export default function RootLayout({
             priceRange: "RM",
             sameAs: [
               "https://www.instagram.com/nujum.cafe/",
-              "https://www.tiktok.com/@nujum.cafe",
+              "https://www.tiktok.com/@nujum.caf",
             ],
           })}
         </Script>
