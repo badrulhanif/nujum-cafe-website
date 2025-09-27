@@ -24,7 +24,7 @@ export default function CeritaKamiPage() {
       >
         <Image
           src="/Images/cerita-kami-hero-banner.png"
-          alt="Overview Banner"
+          alt="Cerita Kami Banner"
           width={1600}
           height={1600}
           className="w-full h-full object-cover"
