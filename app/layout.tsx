@@ -161,7 +161,7 @@ export default function RootLayout({
           <div className="flex flex-col sm:flex-row gap-8 w-full justify-between">
             <div className="flex flex-col gap-8">
               <Link href="/">
-                <BrandLogo className="w-16 sm:w-24 h-8 sm:h-12 text-white" />
+                <BrandLogo className="w-24 h-12 text-white" />
               </Link>
               <p>NUJUM CAFE</p>
               <div className="flex flex-col gap-2 items-start">
