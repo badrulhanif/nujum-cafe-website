@@ -24,7 +24,7 @@ export default function CeritaKamiPage() {
       >
         <Image
           src="/Images/cerita-kami-hero-banner.png"
-          alt="Cerita Kami Banner"
+          alt="Cerita Kami Hero Banner"
           width={1600}
           height={1600}
           className="w-full h-full object-cover"
@@ -67,7 +67,7 @@ export default function CeritaKamiPage() {
         >
           <Image
             src="/Images/cerita-kami-banner-1.png"
-            alt="Overview Banner"
+            alt="Cerita Kami Banner 1"
             width={1600}
             height={1600}
             className="object-cover w-full h-full"
@@ -89,7 +89,7 @@ export default function CeritaKamiPage() {
         <div className="relative flex flex-col w-full p-16 gap-8 sm:gap-16 items-center justify-center rounded-2xl sm:rounded-4xl text-white bg-gradient-to-r from-[#1D1000] to-[#472701]">
           <Image
             src="/Images/bg-quote-design-1.png"
-            alt="Overview Banner"
+            alt="Cerita Kami Quote Banner 1"
             width={150}
             height={150}
             className="absolute -top-8 -left-4 object-cover"
@@ -107,7 +107,7 @@ export default function CeritaKamiPage() {
           </p>
           <Image
             src="/Images/bg-quote-design-2.png"
-            alt="Overview Banner"
+            alt="Cerita Kami Quote Banner 2"
             width={150}
             height={150}
             className="absolute -bottom-8 -right-4 object-cover"
@@ -128,7 +128,7 @@ export default function CeritaKamiPage() {
           <div className="w-full sm:w-1/2 max-h-128 aspect-square overflow-hidden">
             <Image
               src="/Images/cerita-kami-banner-2.png"
-              alt="Overview Banner"
+              alt="Cerita Kami Banner 2"
               width={1600}
               height={1600}
               className="object-cover w-full h-full"
