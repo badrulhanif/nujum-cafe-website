@@ -159,7 +159,7 @@ export default function RootLayout({
         <main className="w-full">{children}</main>
         <footer className="flex flex-col items-start justify-start px-4 py-8 sm:px-64 sm:py-24 gap-8 sm:gap-16 text-[#FFF5E8] bg-footer">
           <div className="flex flex-col sm:flex-row gap-8 w-full justify-between">
-            <div className="flex flex-col gap-4 sm:gap-8">
+            <div className="flex flex-col gap-8">
               <Link href="/">
                 <BrandLogo className="w-16 sm:w-24 h-8 sm:h-12 text-white" />
               </Link>
