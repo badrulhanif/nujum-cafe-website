@@ -1,5 +1,4 @@
 import { MenuItem } from "@/types";
-import { s } from "framer-motion/m";
 
 export const menu: MenuItem[] = [
   {
