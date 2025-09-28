@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 import { useState, useRef } from "react";
 
 import { merriweather } from "@/config/font";
-import { menu } from "@/data/menu";
+import { menus } from "@/data/menu";
 
-const categories = [...new Set(menu.map((item) => item.category))];
+const categories = [...new Set(menus.map((item) => item.category))];
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState<string>(categories[0]);
@@ -59,7 +59,7 @@ export default function MenuPage() {
             {category}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {menu
+            {menus
               .filter((item) => item.category === category)
               .map((item, index) => (
                 <motion.div
