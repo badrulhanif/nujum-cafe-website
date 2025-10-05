@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Shop, Phone, Instagram, Tiktok, Clock } from "iconoir-react";
+import { Shop, Phone, Instagram, Tiktok } from "iconoir-react";
 
 import { merriweather } from "@/config/font";
 
